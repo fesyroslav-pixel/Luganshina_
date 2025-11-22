@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея - Луганщина помнит своих освободителей</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .gallery-section {
+            text-align: center;
+        }
+        
+        .gallery-category {
+            margin: 30px 0;
+        }
+        
+        .category-title {
+            color: #2c3e50;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Луганщина помнит своих освободителей</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="history.html">История освобождения</a></li>
+                <li><a href="heroes.html">Герои-освободители</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="../about.html">Об авторе</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <h2>Фотогалерея памяти</h2>
+            <p>Уникальные фотографии, посвященные освобождению Луганщины и ее героям</p>
+            
+            <div class="gallery-category">
+                <h3 class="category-title">Герои-освободители</h3>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/2c3e50/ffffff?text=Герой+1" 
+                             alt="Герой Советского Союза Иван Борщенко" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/2c3e50/ffffff?text=Герой+1')">
+                        <p>Иван Борщенко</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/34495e/ffffff?text=Герой+2" 
+                             alt="Санитарный инструктор Мария Смирнова" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/34495e/ffffff?text=Герой+2')">
+                        <p>Мария Смирнова</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/16a085/ffffff?text=Герой+3" 
+                             alt="Капитан гвардии Дорохин Павел Иванович" 
+                             class="thumbnail" 
+                             onclick="openModal(C:\Users\Fesovets\Desktop\WebФесовец\images\thumbnails\Дорохин Павел.png)">
+                        <p>Дорохин Павел Иванович</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-category">
+                <h3 class="category-title">Боевые действия</h3>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/e74c3c/ffffff?text=Бой+1" 
+                             alt="Бой за освобождение Луганска" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/e74c3c/ffffff?text=Бой+1')">
+                        <p>Штурм города</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/e67e22/ffffff?text=Бой+2" 
+                             alt="Советские солдаты в наступлении" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/e67e22/ffffff?text=Бой+2')">
+                        <p>Наступление</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/f39c12/ffffff?text=Бой+3" 
+                             alt="Артиллерийская подготовка" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/f39c12/ffffff?text=Бой+3')">
+                        <p>Артподготовка</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-category">
+                <h3 class="category-title">Памятники и мемориалы</h3>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/9b59b6/ffffff?text=Мемориал+1" 
+                             alt="Мемориал освободителям Луганска" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/9b59b6/ffffff?text=Мемориал+1')">
+                        <p>Мемориал славы</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/3498db/ffffff?text=Мемориал+2" 
+                             alt="Вечный огонь" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/3498db/ffffff?text=Мемориал+2')">
+                        <p>Вечный огонь</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/1abc9c/ffffff?text=Мемориал+3" 
+                             alt="Братская могила" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/1abc9c/ffffff?text=Мемориал+3')">
+                        <p>Братская могила</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-category">
+                <h3 class="category-title">Архивные фотографии</h3>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/95a5a6/ffffff?text=Архив+1" 
+                             alt="Освобожденный Луганск 1943 год" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/95a5a6/ffffff?text=Архив+1')">
+                        <p>Город после освобождения</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/7f8c8d/ffffff?text=Архив+2" 
+                             alt="Встреча освободителей" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/7f8c8d/ffffff?text=Архив+2')">
+                        <p>Встреча героев</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/200x150/2c3e50/ffffff?text=Архив+3" 
+                             alt="Награждение героев" 
+                             class="thumbnail" 
+                             onclick="openModal('https://via.placeholder.com/800x600/2c3e50/ffffff?text=Архив+3')">
+                        <p>Церемония награждения</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage">
+        <div id="imageCaption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Луганщина помнит своих освободителей
+
+
+</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
